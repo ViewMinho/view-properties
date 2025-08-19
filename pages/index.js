@@ -21,41 +21,42 @@ export default function Home() {
   </nav>
 </header>
       {/* Hero Section */}
-      <section
-        className="relative h-screen bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white p-6">
-          <h1 className="text-5xl font-serif mb-4">
-            Discover the View. Stay, Live, Belong.
-          </h1>
-          <p className="text-lg max-w-2xl mb-6">
-            Boutique stays & handpicked properties in Northern Portugal.
-          </p>
+   <section
+  className="relative h-screen bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
+  }}
+>
+  {/* dark overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  {/* centered content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+    <h1 className="text-5xl font-serif mb-4">
+      Discover the View. Stay, Live, Belong.
+    </h1>
     <p className="text-lg max-w-2xl mb-6">
-  Boutique stays & handpicked properties in Northern Portugal.
-</p>
+      Boutique stays &amp; handpicked properties in Northern Portugal.
+    </p>
 
-<div className="flex gap-4">
-  <Link
-    href="/stays"
-    className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
-  >
-    Stay with Us
-  </Link>
-  <Link
-    href="/properties"
-    className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
-  >
-    Buy with Us
-  </Link>
-</div>
-
+    <div className="flex gap-4">
+      <Link
+        href="/stays"
+        className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
+      >
+        Stay with Us
+      </Link>
+      <Link
+        href="/properties"
+        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+      >
+        Buy with Us
+      </Link>
+    </div>
+  </div>
+</section>
       </section>
-
       {/* Stays Section */}
       <section className="py-16 px-6 max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-serif mb-8">Stay with View Minho</h2>
