@@ -35,16 +35,25 @@ export default function Home() {
           <p className="text-lg max-w-2xl mb-6">
             Boutique stays & handpicked properties in Northern Portugal.
           </p>
-          <div className="flex gap-4">
-  <Link href="/stays" className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition">
+    <p className="text-lg max-w-2xl mb-6">
+  Boutique stays & handpicked properties in Northern Portugal.
+</p>
+
+<div className="flex gap-4">
+  <Link
+    href="/stays"
+    className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
+  >
     Stay with Us
   </Link>
-  <Link href="/properties" className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
+  <Link
+    href="/properties"
+    className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+  >
     Buy with Us
   </Link>
 </div>
-                    </div>
-        </div>
+
       </section>
 
       {/* Stays Section */}
