@@ -4,40 +4,42 @@ export default function Home() {
   return (
     <div className="font-sans text-gray-800">
       {/* Hero */}
-      <section
-        className="relative h-screen bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8')", // Quinta with pool
-        }}
+      {/* Hero */}
+<section
+  className="relative h-screen bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1950&q=80')", // Gerês waterfall photo
+  }}
+>
+  {/* Dark overlay for readability */}
+  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  {/* Centered content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+    <h1 className="text-5xl font-serif mb-4">
+      Discover the View. Stay, Live, Belong.
+    </h1>
+    <p className="text-lg max-w-2xl mb-6">
+      Boutique stays &amp; handpicked properties in Northern Portugal.
+    </p>
+
+    <div className="flex gap-4">
+      <Link
+        href="/stays"
+        className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
-          <h1 className="text-5xl font-serif mb-4">
-            Discover the View. Stay, Live, Belong.
-          </h1>
-          <p className="text-lg max-w-2xl mb-6">
-            Boutique stays &amp; handpicked properties in Northern Portugal.
-          </p>
-
-          <div className="flex gap-4">
-            <Link
-              href="/stays"
-              className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
-            >
-              Stay with Us
-            </Link>
-            <Link
-              href="/properties"
-              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
-            >
-              Buy with Us
-            </Link>
-          </div>
-        </div>
-      </section>
-
+        Stay with Us
+      </Link>
+      <Link
+        href="/properties"
+        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+      >
+        Buy with Us
+      </Link>
+    </div>
+  </div>
+</section>
       {/* Stays Section */}
       <section className="py-16 px-6 max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-serif mb-8">Stay with View Minho</h2>
