@@ -147,30 +147,29 @@ export default function Home() {
 
       {/* About Section */}
       <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
-        <div className="md:flex items-center gap-10">
-          <img
-            src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8"
-            alt="Traditional Quinta in Minho with pool"
-            className="rounded-2xl shadow-lg w-full md:w-1/2"
-          />
-          <div className="mt-8 md:mt-0 md:w-1/2">
-            <h2 className="text-3xl font-serif mb-4">About Us</h2>
-            <p className="text-lg mb-6">
-              View Minho began with a passion for sharing Northern Portugal with
-              travelers. With View Properties, we extend this vision — offering
-              not just a stay, but a chance to belong. Our approach is boutique:
-              intimate, personalized, and always focused on you.
-            </p>
-            <Link
-              href="/properties"
-              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-      </section>
-
+  <div className="md:flex items-center gap-10">
+    <img
+      src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8?auto=format&fit=crop&w=1200&q=80"
+      alt="Traditional Quinta in Minho with pool"
+      className="rounded-2xl shadow-lg w-full md:w-1/2"
+    />
+    <div className="mt-8 md:mt-0 md:w-1/2">
+      <h2 className="text-3xl font-serif mb-4">About Us</h2>
+      <p className="text-lg mb-6">
+        View Minho began with a passion for sharing Northern Portugal with
+        travelers. With View Properties, we extend this vision — offering
+        not just a stay, but a chance to belong. Our approach is boutique:
+        intimate, personalized, and always focused on you.
+      </p>
+      <a
+        href="/properties"
+        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
       {/* CTA */}
       <section
         className="relative py-20 px-6 bg-cover bg-center text-center text-white"
