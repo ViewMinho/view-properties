@@ -53,8 +53,8 @@ export default function Home() {
       >
         Buy with Us
       </Link>
-    </div>
-  </div>
+          </div>  // closes the "flex gap-4" div
+   </div>  // closes the big centered content div
 </section>
       </section>
       {/* Stays Section */}
