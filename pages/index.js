@@ -172,35 +172,35 @@ export default function Home() {
 </section>
       {/* CTA */}
       <section
-        className="relative py-20 px-6 bg-cover bg-center text-center text-white"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee')", // Gerês waterfall
-        }}
+       <section className="relative py-20 px-6 bg-cover bg-center text-center text-white"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee')", // Gerês waterfall
+  }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div className="relative z-10 max-w-2xl mx-auto">
+    <h2 className="text-4xl font-serif mb-4">Stay. Live. Experience.</h2>
+    <p className="text-lg mb-6">
+      Book your holiday, find your dream home, or discover the magic of
+      Minho with us.
+    </p>
+    <div className="flex gap-4 justify-center">
+      <Link
+        href="/stays"
+        className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 max-w-2xl mx-auto">
-          <h2 className="text-4xl font-serif mb-4">Stay. Live. Experience.</h2>
-          <p className="text-lg mb-6">
-            Book your holiday, find your dream home, or discover the magic of
-            Minho with us.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <Link
-              href="/stays"
-              className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
-            >
-              Book Your Stay
-            </Link>
-            <Link
-              href="/properties"
-              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
-            >
-              Find Your Home
-            </Link>
-          </div>
-        </div>
-      </section>
+        Book Your Stay
+      </Link>
+      <Link
+        href="/properties"
+        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+      >
+        Find Your Home
+      </Link>
     </div>
+  </div>
+</section>
+        </div>
   );
 }
