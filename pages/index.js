@@ -82,12 +82,14 @@ export default function Home() {
               alt="Apartment"
             />
           </div>
-        </div>
-        <button className="mt-8 px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
-          Explore Our Stays
-        </button>
-      </section>
-
+     </div>
+<Link
+  href="/stays"
+  className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+>
+  Explore Our Stays
+</Link>
+</section>
       {/* Properties Section */}
       <section className="py-16 px-6 bg-gray-100 text-center">
         <h2 className="text-3xl font-serif mb-8">Buy with View Properties</h2>
