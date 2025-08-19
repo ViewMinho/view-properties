@@ -1,0 +1,22 @@
+[
+  {
+    "id": "stone-house-arcos",
+    "title": "Stone House • Arcos",
+    "summary": "2 bedrooms • Sleeps 4 • Patio",
+    "priceFrom": "from €95/night",
+    "image": "/stays/stone-house.jpg",
+    "location": "Arcos de Valdevez",
+    "amenities": ["Wi-Fi", "Fireplace", "Patio"],
+    "bookingUrl": "https://your-booking-link-or-airbnb-url"
+  },
+  {
+    "id": "modern-villa-braga",
+    "title": "Modern Villa • Braga",
+    "summary": "3 bedrooms • Private pool",
+    "priceFrom": "from €160/night",
+    "image": "/stays/modern-villa.jpg",
+    "location": "Braga",
+    "amenities": ["Pool", "A/C", "Parking"],
+    "bookingUrl": "https://your-booking-link"
+  }
+]
