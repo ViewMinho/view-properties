@@ -43,8 +43,7 @@ export default function Home() {
     Buy with Us
   </Link>
 </div>
-            </button>
-          </div>
+                    </div>
         </div>
       </section>
 
