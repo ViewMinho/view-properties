@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="font-sans text-gray-800">
@@ -17,11 +18,13 @@ export default function Home() {
             Boutique stays & handpicked properties in Northern Portugal.
           </p>
           <div className="flex gap-4">
-            <button className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition">
-              Stay with Us
-            </button>
-            <button className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
-              Buy with Us
+  <Link href="/stays" className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition">
+    Stay with Us
+  </Link>
+  <Link href="/properties" className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
+    Buy with Us
+  </Link>
+</div>
             </button>
           </div>
         </div>
