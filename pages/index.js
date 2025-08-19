@@ -4,18 +4,15 @@ export default function Home() {
   return (
     <div className="font-sans text-gray-800">
       {/* Hero */}
-      {/* Hero */}
-<section
+   <section
   className="relative h-screen bg-cover bg-center"
   style={{
     backgroundImage:
-      "url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1950&q=80')", // Gerês waterfall photo
+      "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
   }}
 >
-  {/* Dark overlay for readability */}
   <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  {/* Centered content */}
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
     <h1 className="text-5xl font-serif mb-4">
       Discover the View. Stay, Live, Belong.
