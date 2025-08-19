@@ -143,8 +143,9 @@ export default function Home() {
       <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
         <div className="md:flex items-center gap-10">
          <img
-  src="https://images.unsplash.com/photo-1606112219348-204d7d8b94ee"
-  alt="Cascata in Gerês Natural Park"
+<img
+  src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8"
+  alt="Traditional Quinta in Minho with pool"
 />
             alt="About us"
             className="rounded-2xl shadow-lg w-full md:w-1/2"
