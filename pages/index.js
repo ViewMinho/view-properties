@@ -1,42 +1,42 @@
 import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="font-sans text-gray-800">
-   
-          {/* Hero Section */}
-   <section
-  className="relative h-screen bg-cover bg-center"
-  style={{
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
-  }}
->
-  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
-    <h1 className="text-5xl font-serif mb-4">
-      Discover the View. Stay, Live, Belong.
-    </h1>
-    <p className="text-lg max-w-2xl mb-6">
-      Boutique stays &amp; handpicked properties in Northern Portugal.
-    </p>
-
-    <div className="flex gap-4">
-      <Link
-        href="/stays"
-        className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
+      {/* Hero */}
+      <section
+        className="relative h-screen bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8')", // Quinta with pool
+        }}
       >
-        Stay with Us
-      </Link>
-      <Link
-        href="/properties"
-        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
-      >
-        Buy with Us
-      </Link>
-    </div>
-  </div>
-</section>
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
+          <h1 className="text-5xl font-serif mb-4">
+            Discover the View. Stay, Live, Belong.
+          </h1>
+          <p className="text-lg max-w-2xl mb-6">
+            Boutique stays &amp; handpicked properties in Northern Portugal.
+          </p>
+
+          <div className="flex gap-4">
+            <Link
+              href="/stays"
+              className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
+            >
+              Stay with Us
+            </Link>
+            <Link
+              href="/properties"
+              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+            >
+              Buy with Us
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Stays Section */}
       <section className="py-16 px-6 max-w-6xl mx-auto text-center">
@@ -64,39 +64,57 @@ export default function Home() {
               alt="Apartment"
             />
           </div>
-     </div>
-<Link
-  href="/stays"
-  className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
->
-  Explore Our Stays
-</Link>
-</section>
+        </div>
+        <Link
+          href="/stays"
+          className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+        >
+          Explore Our Stays
+        </Link>
+      </section>
+
       {/* Properties Section */}
-      <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
-  <div className="md:flex items-center gap-10">
-    <img
-      src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8"
-      alt="Traditional Quinta in Minho with pool"
-      className="rounded-2xl shadow-lg w-full md:w-1/2"
-    />
-    <div className="mt-8 md:mt-0 md:w-1/2">
-      <h2 className="text-3xl font-serif mb-4">About Us</h2>
-      <p className="text-lg mb-6">
-        View Minho began with a passion for sharing Northern Portugal with
-        travelers. With View Properties, we extend this vision — offering
-        not just a stay, but a chance to belong. Our approach is boutique:
-        intimate, personalized, and always focused on you.
-      </p>
-      <a
-        href="/properties"
-        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
-      >
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
+      <section className="py-16 px-6 bg-gray-100 text-center">
+        <h2 className="text-3xl font-serif mb-8">Buy with View Properties</h2>
+        <p className="text-lg mb-10 max-w-2xl mx-auto">
+          Looking for a place to call your own? Our boutique real estate service
+          offers handpicked homes with a personal touch.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-2xl shadow-lg p-4">
+            <img
+              src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
+              alt="Charming stone house"
+              className="rounded-xl mb-4"
+            />
+            <h3 className="font-semibold">Charming Stone House in Arcos</h3>
+            <p className="text-green-700 font-bold">€245,000</p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg p-4">
+            <img
+              src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+              alt="Modern apartment"
+              className="rounded-xl mb-4"
+            />
+            <h3 className="font-semibold">Modern Riverside Apartment</h3>
+            <p className="text-green-700 font-bold">€310,000</p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-lg p-4">
+            <img
+              src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7"
+              alt="Country villa"
+              className="rounded-xl mb-4"
+            />
+            <h3 className="font-semibold">Countryside Boutique Villa</h3>
+            <p className="text-green-700 font-bold">€420,000</p>
+          </div>
+        </div>
+        <Link
+          href="/properties"
+          className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+        >
+          View All Properties
+        </Link>
       </section>
 
       {/* Experiences Section */}
@@ -113,26 +131,27 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-4xl mb-2">🚙</span>
-            <p>Quad & Buggy</p>
+            <p>Quad &amp; Buggy</p>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-4xl mb-2">🏰</span>
             <p>Arcos Tour</p>
           </div>
         </div>
-        <button className="mt-8 px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
+        <Link
+          href="/experiences"
+          className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+        >
           See All Experiences
-        </button>
+        </Link>
       </section>
 
       {/* About Section */}
       <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
         <div className="md:flex items-center gap-10">
-         <img
-  src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8"
-  alt="Traditional Quinta in Minho with pool"
-/>
-            alt="About us"
+          <img
+            src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8"
+            alt="Traditional Quinta in Minho with pool"
             className="rounded-2xl shadow-lg w-full md:w-1/2"
           />
           <div className="mt-8 md:mt-0 md:w-1/2">
@@ -143,19 +162,22 @@ export default function Home() {
               not just a stay, but a chance to belong. Our approach is boutique:
               intimate, personalized, and always focused on you.
             </p>
-            <button className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
+            <Link
+              href="/properties"
+              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* CTA */}
       <section
         className="relative py-20 px-6 bg-cover bg-center text-center text-white"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
+            "url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee')", // Gerês waterfall
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -166,32 +188,21 @@ export default function Home() {
             Minho with us.
           </p>
           <div className="flex gap-4 justify-center">
-            <button className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition">
+            <Link
+              href="/stays"
+              className="px-6 py-3 bg-white text-gray-800 rounded-2xl shadow hover:bg-gray-200 transition"
+            >
               Book Your Stay
-            </button>
-            <button className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
+            </Link>
+            <Link
+              href="/properties"
+              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+            >
               Find Your Home
-            </button>
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-10 px-6 bg-gray-900 text-gray-300 text-center">
-        <p className="mb-2">
-          Contact: info@viewproperties.pt | +351 910 000 000 | WhatsApp
-          Available
-        </p>
-        <p className="mb-4">Follow us on Instagram & Facebook</p>
-        <input
-          type="email"
-          placeholder="Your email"
-          className="px-4 py-2 rounded-2xl mr-2"
-        />
-        <button className="px-6 py-2 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
-          Subscribe
-        </button>
-      </footer>
     </div>
   );
 }
