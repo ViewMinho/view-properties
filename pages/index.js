@@ -28,10 +28,8 @@ export default function Home() {
       "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')",
   }}
 >
-  {/* dark overlay */}
   <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  {/* centered content */}
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-6">
     <h1 className="text-5xl font-serif mb-4">
       Discover the View. Stay, Live, Belong.
@@ -53,10 +51,10 @@ export default function Home() {
       >
         Buy with Us
       </Link>
-          </div>  // closes the "flex gap-4" div
-   </div>  // closes the big centered content div
+    </div>
+  </div>
 </section>
-      </section>
+
       {/* Stays Section */}
       <section className="py-16 px-6 max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-serif mb-8">Stay with View Minho</h2>
