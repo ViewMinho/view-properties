@@ -20,3 +20,39 @@
     "bookingUrl": "https://your-booking-link"
   }
 ]
+[
+  {
+    "id": "villa-paoryrna",
+    "title": "Villa Paoryrna",
+    "summary": "Luxury villa with outdoor pool, 5 bedrooms, and stunning views of Northern Portugal.",
+    "location": "Vila Verde, Braga",
+    "capacity": "5 bed • 5 bath • Sleeps 10",
+    "priceFrom": "from €350/night",
+    "image": "/stays/villa-paoryrna.jpg",
+    "gallery": [
+      "/stays/villa-paoryrna-1.jpg",
+      "/stays/villa-paoryrna-2.jpg"
+    ],
+    "amenities": ["Pool", "Wi-Fi", "Air Conditioning", "Parking", "Garden"],
+    "links": {
+      "website": "https://viewminho.pt/properties/villa-paoryrna/"
+    }
+  },
+  {
+    "id": "casal-do-porto",
+    "title": "Casal do Porto",
+    "summary": "Charming stone house with rustic details and a cozy atmosphere, ideal for families.",
+    "location": "Vila Verde, Braga",
+    "capacity": "3 bed • 2 bath • Sleeps 6",
+    "priceFrom": "from €120/night",
+    "image": "/stays/casal-do-porto.jpg",
+    "gallery": [
+      "/stays/casal-do-porto-1.jpg",
+      "/stays/casal-do-porto-2.jpg"
+    ],
+    "amenities": ["Fireplace", "Wi-Fi", "Garden", "Private Parking"],
+    "links": {
+      "website": "https://viewminho.pt/properties/casal-do-porto/"
+    }
+  }
+]
