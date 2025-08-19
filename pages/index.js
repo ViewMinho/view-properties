@@ -170,20 +170,19 @@ export default function Home() {
     </div>
   </div>
 </section>
-      {/* CTA */}
-      <section
-       <section className="relative py-20 px-6 bg-cover bg-center text-center text-white"
+     {/* CTA */}
+<section
+  className="relative py-20 px-6 bg-cover bg-center text-center text-white"
   style={{
     backgroundImage:
-      "url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee')", // Gerês waterfall
+      "url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=1950&q=80')",
   }}
 >
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
   <div className="relative z-10 max-w-2xl mx-auto">
-    <h2 className="text-4xl font-serif mb-4">Stay. Live. Experience.</h2>
+    <h2 className="text-4xl font-serif mb-4">Stay · Live · Experience</h2>
     <p className="text-lg mb-6">
-      Book your holiday, find your dream home, or discover the magic of
-      Minho with us.
+      Book your holiday, find your dream home, or discover the magic of Minho with us.
     </p>
     <div className="flex gap-4 justify-center">
       <Link
