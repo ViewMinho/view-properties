@@ -1,58 +1,61 @@
-[
-  {
-    "id": "stone-house-arcos",
-    "title": "Stone House • Arcos",
-    "summary": "2 bedrooms • Sleeps 4 • Patio",
-    "priceFrom": "from €95/night",
-    "image": "/stays/stone-house.jpg",
-    "location": "Arcos de Valdevez",
-    "amenities": ["Wi-Fi", "Fireplace", "Patio"],
-    "bookingUrl": "https://your-booking-link-or-airbnb-url"
-  },
-  {
-    "id": "modern-villa-braga",
-    "title": "Modern Villa • Braga",
-    "summary": "3 bedrooms • Private pool",
-    "priceFrom": "from €160/night",
-    "image": "/stays/modern-villa.jpg",
-    "location": "Braga",
-    "amenities": ["Pool", "A/C", "Parking"],
-    "bookingUrl": "https://your-booking-link"
-  }
-]
-[
-  {
-    "id": "villa-paoryrna",
-    "title": "Villa Paoryrna",
-    "summary": "Luxury villa with outdoor pool, 5 bedrooms, and stunning views of Northern Portugal.",
-    "location": "Vila Verde, Braga",
-    "capacity": "5 bed • 5 bath • Sleeps 10",
-    "priceFrom": "from €350/night",
-    "image": "/stays/villa-paoryrna.jpg",
-    "gallery": [
-      "/stays/villa-paoryrna-1.jpg",
-      "/stays/villa-paoryrna-2.jpg"
-    ],
-    "amenities": ["Pool", "Wi-Fi", "Air Conditioning", "Parking", "Garden"],
-    "links": {
-      "website": "https://viewminho.pt/properties/villa-paoryrna/"
-    }
-  },
-  {
-    "id": "casal-do-porto",
-    "title": "Casal do Porto",
-    "summary": "Charming stone house with rustic details and a cozy atmosphere, ideal for families.",
-    "location": "Vila Verde, Braga",
-    "capacity": "3 bed • 2 bath • Sleeps 6",
-    "priceFrom": "from €120/night",
-    "image": "/stays/casal-do-porto.jpg",
-    "gallery": [
-      "/stays/casal-do-porto-1.jpg",
-      "/stays/casal-do-porto-2.jpg"
-    ],
-    "amenities": ["Fireplace", "Wi-Fi", "Garden", "Private Parking"],
-    "links": {
-      "website": "https://viewminho.pt/properties/casal-do-porto/"
-    }
-  }
-]
+import stays from "@/data/stays.json";
+import Link from "next/link";
+
+export default function Stays() {
+  return (
+    <main className="max-w-6xl mx-auto px-6 py-16">
+      <h1 className="text-4xl font-serif mb-2">Boutique Stays in Minho</h1>
+      <p className="mb-10 text-lg text-gray-600">
+        Handpicked homes for peaceful, authentic experiences.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {stays.map((s) => (
+          <article key={s.id} className="rounded-2xl overflow-hidden shadow-lg bg-white">
+            <img src={s.image} alt={s.title} className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h2 className="font-semibold">{s.title}</h2>
+              {s.location && <p className="text-sm text-gray-500">{s.location}</p>}
+              {s.capacity && <p className="text-sm text-gray-500">{s.capacity}</p>}
+              {s.summary && <p className="text-sm text-gray-700 mt-2">{s.summary}</p>}
+              {s.priceFrom && <p className="text-green-700 font-semibold mt-2">{s.priceFrom}</p>}
+
+              {s.amenities?.length ? (
+                <ul className="flex flex-wrap gap-2 mt-3 text-xs text-gray-600">
+                  {s.amenities.map((a, i) => (
+                    <li key={i} className="bg-gray-100 px-2 py-1 rounded-full">{a}</li>
+                  ))}
+                </ul>
+              ) : null}
+
+              <div className="mt-4 flex flex-wrap gap-3">
+                {s.links?.website && (
+                  <a href={s.links.website} target="_blank" rel="noopener noreferrer"
+                     className="px-4 py-2 bg-gray-200 text-gray-800 rounded-2xl">
+                    View on Site
+                  </a>
+                )}
+                {s.links?.airbnb && (
+                  <a href={s.links.airbnb} target="_blank" rel="noopener noreferrer"
+                     className="px-4 py-2 bg-pink-600 text-white rounded-2xl">
+                    Airbnb
+                  </a>
+                )}
+                {s.links?.booking && (
+                  <a href={s.links.booking} target="_blank" rel="noopener noreferrer"
+                     className="px-4 py-2 bg-blue-700 text-white rounded-2xl">
+                    Booking.com
+                  </a>
+                )}
+                <Link href={`/stays/${s.id}`} className="px-4 py-2 bg-green-700 text-white rounded-2xl">
+                  Details
+                </Link>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </main>
+  );
+}
+
