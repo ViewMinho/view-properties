@@ -73,44 +73,30 @@ export default function Home() {
 </Link>
 </section>
       {/* Properties Section */}
-      <section className="py-16 px-6 bg-gray-100 text-center">
-        <h2 className="text-3xl font-serif mb-8">Buy with View Properties</h2>
-        <p className="text-lg mb-10 max-w-2xl mx-auto">
-          Looking for a place to call your own? Our boutique real estate service
-          offers handpicked homes with a personal touch.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl shadow-lg p-4">
-            <img
-              src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
-              alt="Charming stone house"
-              className="rounded-xl mb-4"
-            />
-            <h3 className="font-semibold">Charming Stone House in Arcos</h3>
-            <p className="text-green-700 font-bold">€245,000</p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg p-4">
-            <img
-              src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
-              alt="Modern apartment"
-              className="rounded-xl mb-4"
-            />
-            <h3 className="font-semibold">Modern Riverside Apartment</h3>
-            <p className="text-green-700 font-bold">€310,000</p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg p-4">
-            <img
-              src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7"
-              alt="Country villa"
-              className="rounded-xl mb-4"
-            />
-            <h3 className="font-semibold">Countryside Boutique Villa</h3>
-            <p className="text-green-700 font-bold">€420,000</p>
-          </div>
-        </div>
-        <button className="mt-8 px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition">
-          View All Properties
-        </button>
+      <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
+  <div className="md:flex items-center gap-10">
+    <img
+      src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8"
+      alt="Traditional Quinta in Minho with pool"
+      className="rounded-2xl shadow-lg w-full md:w-1/2"
+    />
+    <div className="mt-8 md:mt-0 md:w-1/2">
+      <h2 className="text-3xl font-serif mb-4">About Us</h2>
+      <p className="text-lg mb-6">
+        View Minho began with a passion for sharing Northern Portugal with
+        travelers. With View Properties, we extend this vision — offering
+        not just a stay, but a chance to belong. Our approach is boutique:
+        intimate, personalized, and always focused on you.
+      </p>
+      <a
+        href="/properties"
+        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
       </section>
 
       {/* Experiences Section */}
