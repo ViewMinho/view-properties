@@ -73,48 +73,58 @@ export default function Home() {
       </section>
 
       {/* Properties Section */}
-      <section className="py-16 px-6 bg-gray-100 text-center">
-        <h2 className="text-3xl font-serif mb-8">Buy with View Properties</h2>
-        <p className="text-lg mb-10 max-w-2xl mx-auto">
-          Looking for a place to call your own? Our boutique real estate service
-          offers handpicked homes with a personal touch.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl shadow-lg p-4">
-            <img
-              src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
-              alt="Charming stone house"
-              className="rounded-xl mb-4"
-            />
-            <h3 className="font-semibold">Charming Stone House in Arcos</h3>
-            <p className="text-green-700 font-bold">€245,000</p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg p-4">
-            <img
-              src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
-              alt="Modern apartment"
-              className="rounded-xl mb-4"
-            />
-            <h3 className="font-semibold">Modern Riverside Apartment</h3>
-            <p className="text-green-700 font-bold">€310,000</p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg p-4">
-            <img
-              src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7"
-              alt="Country villa"
-              className="rounded-xl mb-4"
-            />
-            <h3 className="font-semibold">Countryside Boutique Villa</h3>
-            <p className="text-green-700 font-bold">€420,000</p>
-          </div>
-        </div>
-        <Link
-          href="/properties"
-          className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
-        >
-          View All Properties
-        </Link>
-      </section>
+<section className="py-16 px-6 bg-gray-100 text-center">
+  <h2 className="text-3xl font-serif mb-8">Buy with View Properties</h2>
+  <p className="text-lg mb-10 max-w-2xl mx-auto">
+    Looking for a place to call your own? Our boutique real estate service
+    offers handpicked homes with a personal touch.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Property 1 */}
+    <a
+      href="https://www.idealista.pt/imovel/34437743/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white rounded-2xl shadow-lg p-4 hover:shadow-xl transition"
+    >
+      <img
+        src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37743/34437743/312863495.jpg"
+        alt="Property in Vila Verde"
+        className="rounded-xl mb-4"
+      />
+      <h3 className="font-semibold">Quinta Típica • Vila Verde</h3>
+      <p className="text-green-700 font-bold">€650,000</p>
+    </a>
+
+    {/* Property 2 */}
+    <a
+      href="https://www.idealista.pt/imovel/34437810/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white rounded-2xl shadow-lg p-4 hover:shadow-xl transition"
+    >
+      <img
+        src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37810/34437810/312863494.jpg"
+        alt="Property in Braga"
+        className="rounded-xl mb-4"
+      />
+      <h3 className="font-semibold">Moradia Moderna • Braga</h3>
+      <p className="text-green-700 font-bold">€420,000</p>
+    </a>
+
+    {/* Property 3 (placeholder for now, we can add your 3rd) */}
+    <div className="bg-white rounded-2xl shadow-lg p-4 flex items-center justify-center">
+      <span className="text-gray-500">More properties coming soon…</span>
+    </div>
+  </div>
+
+  <Link
+    href="/properties"
+    className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+  >
+    View All Properties
+  </Link>
+</section>
 
       {/* Experiences Section */}
       <section className="py-16 px-6 max-w-6xl mx-auto text-center">
