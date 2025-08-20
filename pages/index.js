@@ -89,11 +89,11 @@ export default function Home() {
     >
       <img
         src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37743/34437743/312863495.jpg"
-        alt="Property in Vila Verde"
+        alt="Property in Vade, Vila Verde"
         className="rounded-xl mb-4"
       />
-      <h3 className="font-semibold">Quinta Típica • Vila Verde</h3>
-      <p className="text-green-700 font-bold">€650,000</p>
+      <h3 className="font-semibold">Moradia Individual • Vade Vila Verde</h3>
+      <p className="text-green-700 font-bold">€295,000</p>
     </a>
 
     {/* Property 2 */}
@@ -105,11 +105,11 @@ export default function Home() {
     >
       <img
         src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37810/34437810/312863494.jpg"
-        alt="Property in Braga"
+        alt="Property in Barros, Vila Verde"
         className="rounded-xl mb-4"
       />
-      <h3 className="font-semibold">Moradia Moderna • Braga</h3>
-      <p className="text-green-700 font-bold">€420,000</p>
+      <h3 className="font-semibold">Terreno • Barros</h3>
+      <p className="text-green-700 font-bold">€55,000</p>
     </a>
 
     {/* Property 3 (placeholder for now, we can add your 3rd) */}
