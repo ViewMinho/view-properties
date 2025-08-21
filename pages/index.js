@@ -81,20 +81,30 @@ export default function Home() {
   </p>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     {/* Property 1 */}
-    <a
-      href="https://www.idealista.pt/imovel/34437743/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-white rounded-2xl shadow-lg p-4 hover:shadow-xl transition"
-    >
-      <img
-        src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37743/34437743/312863495.jpg"
-        alt="Property in Vade, Vila Verde"
-        className="rounded-xl mb-4"
-      />
-      <h3 className="font-semibold">Moradia Individual • Vade Vila Verde</h3>
-      <p className="text-green-700 font-bold">€295,000</p>
-    </a>
+    <h2>Buy with View Properties</h2>
+<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {/* Vade Property */}
+  <Link
+    href="https://www.idealista.pt/imovel/34437743/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block rounded-lg overflow-hidden shadow hover:shadow-lg transition"
+  >
+    <Image
+      src="/stays/CFVade.jpeg"
+      alt="Vade property"
+      width={800}
+      height={600}
+      className="w-full h-auto object-cover"
+      priority
+    />
+    <div className="p-3">
+      <h3 className="font-semibold">Vade</h3>
+      <p className="text-sm opacity-80">View on Idealista</p>
+    </div>
+  </Link>
+</div>
+
 
     {/* Property 2 */}
     <a
