@@ -84,23 +84,25 @@ export default function Home() {
 
         {/* Grid of properties */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Vade Property (local image confirmed working) */}
-          <a
-            href="https://www.idealista.pt/imovel/34437743/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
-          >
-            <img
-              src="/stays/CFVade.jpeg"
-              alt="Vade property"
-              className="w-full h-auto object-cover"
-            />
-            <div className="p-4">
-              <h3 className="font-semibold">Vade</h3>
-              <p className="text-sm opacity-80">View on Idealista</p>
-            </div>
-          </a>
+        {/* Vade Property */}
+<a
+  href="https://www.idealista.pt/imovel/34437743/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
+>
+  <img
+    src="/stays/CFVade.jpeg"
+    alt="Property in Vade, Vila Verde"
+    className="w-full h-auto object-cover"
+  />
+  <div className="p-4">
+    <h3 className="font-semibold">Independent House in Vade</h3>
+    <p className="text-gray-600">Vade, Vila Verde</p>
+    <p className="text-gray-500 text-sm mb-2">Independent house surrounded by nature</p>
+    <p className="text-green-700 font-bold">€295,000</p>
+  </div>
+</a>
 
           {/* Barros Property (using Idealista image for now) */}
           <a
