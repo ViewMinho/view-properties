@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
-
 export default function Home() {
   return (
     <div className="font-sans text-gray-800">
@@ -74,28 +72,43 @@ export default function Home() {
           Explore Our Stays
         </Link>
       </section>
-
-      {/* Properties Section */}
 {/* Properties Section */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-  {/* Vade Property */}
-  <a
-    href="https://www.idealista.pt/imovel/34437743/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block rounded-lg overflow-hidden shadow hover:shadow-lg transition text-left"
+<section className="py-16 px-6 bg-gray-100 text-center">
+  <h2 className="text-3xl font-serif mb-8">Buy with View Properties</h2>
+  <p className="text-lg mb-10 max-w-2xl mx-auto">
+    Looking for a place to call your own? Our boutique real estate service
+    offers handpicked homes with a personal touch.
+  </p>
+
+  {/* ONE grid container */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Vade Property */}
+    <a
+      href="https://www.idealista.pt/imovel/34437743/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block rounded-lg overflow-hidden shadow hover:shadow-lg transition text-left"
+    >
+      <img
+        src="/stays/CFVade.jpeg"
+        alt="Vade property"
+        className="w-full h-auto object-cover"
+      />
+      <div className="p-3">
+        <h3 className="font-semibold">Vade</h3>
+        <p className="text-sm opacity-80">View on Idealista</p>
+      </div>
+    </a>
+  </div>
+  {/* Button below grid */}
+  <Link
+    href="/properties"
+    className="mt-8 inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
   >
-    <img
-      src="/stays/CFVade.jpeg"
-      alt="Vade property"
-      className="w-full h-auto object-cover"
-    />
-    <div className="p-3">
-      <h3 className="font-semibold">Vade</h3>
-      <p className="text-sm opacity-80">View on Idealista</p>
-    </div>
-  </a>
-</div>
+    View All Properties
+  </Link>
+</section>
+
     {/* Property 2 */}
     <a
       href="https://www.idealista.pt/imovel/34437810/"
