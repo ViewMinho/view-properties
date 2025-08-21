@@ -99,8 +99,7 @@ export default function Home() {
   <div className="p-4">
     <h3 className="font-semibold">Independent House in Vade</h3>
     <p className="text-gray-600">Vade, Vila Verde</p>
-    <p className="text-gray-500 text-sm mb-2">Independent house surrounded by nature</p>
-    <p className="text-green-700 font-bold">€295,000</p>
+        <p className="text-green-700 font-bold">€295,000</p>
   </div>
 </a>
 
