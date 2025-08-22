@@ -130,7 +130,10 @@ export default function Home() {
               <p className="text-green-700 font-bold">€55,000</p>
             </div>
           </a>
-
+ <img
+              src="/stays/BGpic.png"
+              alt="More Properties Coming Soon..."
+              className="w-full h-auto object-cover"
           {/* Placeholder for future property */}
           <div className="bg-white rounded-2xl shadow-lg p-4 flex items-center justify-center">
             <span className="text-gray-500">More properties coming soon…</span>
