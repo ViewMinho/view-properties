@@ -175,8 +175,7 @@ export default function Home() {
   alt="Photo of me - View Minho"
   className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
 />
-          />
-          <div className="mt-8 md:mt-0 md:w-1/2">
+                    <div className="mt-8 md:mt-0 md:w-1/2">
             <h2 className="text-3xl font-serif mb-4">About Us</h2>
             <p className="text-lg mb-6">
               View Minho began with a passion for sharing Northern Portugal with
