@@ -191,7 +191,7 @@ export default function Home() {
     </div>
   </div>
 </section>
-    
+   
       {/* CTA */}
       <section
         className="relative py-20 px-6 bg-cover bg-center text-center text-white"
