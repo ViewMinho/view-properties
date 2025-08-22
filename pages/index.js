@@ -181,7 +181,7 @@ export default function Home() {
       <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
         <div className="md:flex items-center gap-10">
           <img
-            src="/stays/picCV1.jpeg"
+            src="/stays/picCVMito1.png"
             alt="Photo of me - View Minho"
             className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
           />
