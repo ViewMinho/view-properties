@@ -51,18 +51,21 @@ export default function Home() {
             <img
               src="https://images.unsplash.com/photo-1600585152220-90363fe7e115"
               alt="Stone house"
+              className="w-full h-auto object-cover"
             />
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1590490359683-658d3d59f07b"
               alt="Modern villa"
+              className="w-full h-auto object-cover"
             />
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
               alt="Apartment"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
@@ -84,24 +87,27 @@ export default function Home() {
 
         {/* Grid of properties */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Vade Property */}
-<a
-  href="https://www.idealista.pt/imovel/34437743/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
->
-  <img
-    src="/stays/CFVade.jpeg"
-    alt="Property in Vade, Vila Verde"
-    className="w-full h-auto object-cover"
-  />
-  <div className="p-4">
-    <h3 className="font-semibold">Independent House in Vade</h3>
-    <p className="text-gray-600">Vade, Vila Verde</p>
-        <p className="text-green-700 font-bold">€295,000</p>
-  </div>
-</a>
+          {/* Vade Property */}
+          <a
+            href="https://www.idealista.pt/imovel/34437743/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
+          >
+            <img
+              src="/stays/CFVade.jpeg"
+              alt="Property in Vade, Vila Verde"
+              className="w-full h-auto object-cover"
+            />
+            <div className="p-4">
+              <h3 className="font-semibold">Independent House in Vade</h3>
+              <p className="text-gray-600">Vade, Vila Verde</p>
+              <p className="text-gray-500 text-sm mb-2">
+                Independent house surrounded by nature
+              </p>
+              <p className="text-green-700 font-bold">€295,000</p>
+            </div>
+          </a>
 
           {/* Barros Property (using Idealista image for now) */}
           <a
@@ -110,13 +116,17 @@ export default function Home() {
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
           >
-              <img
-    src="/stays/CFBarros.jpeg"
-    alt="Property in Vade, Vila Verde"
-    className="w-full h-auto object-cover"
-  />
+            <img
+              src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37810/34437810/312863494.jpg"
+              alt="Property in Barros, Vila Verde"
+              className="w-full h-auto object-cover"
+            />
             <div className="p-4">
-              <h3 className="font-semibold">Terreno • Barros</h3>
+              <h3 className="font-semibold">Terreno Barros</h3>
+              <p className="text-gray-600">Barros, Vila Verde</p>
+              <p className="text-gray-500 text-sm mb-2">
+                Rustic plot with countryside views
+              </p>
               <p className="text-green-700 font-bold">€55,000</p>
             </div>
           </a>
@@ -166,32 +176,33 @@ export default function Home() {
           See All Experiences
         </Link>
       </section>
-{/* About Section */}
-<section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
-  <div className="md:flex items-center gap-10">
-    <img
-      src="/about/picCVmito.jpeg"
-      alt="Photo of me - View Minho"
-      className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
-    />
-    <div className="mt-8 md:mt-0 md:w-1/2">
-      <h2 className="text-3xl font-serif mb-4">About Us</h2>
-      <p className="text-lg mb-6">
-        View Minho began with a passion for sharing Northern Portugal with
-        travelers. With View Properties, we extend this vision — offering
-        not just a stay, but a chance to belong. Our approach is boutique:
-        intimate, personalized, and always focused on you.
-      </p>
-      <a
-        href="/properties"
-        className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
-      >
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
-   
+
+      {/* About Section */}
+      <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
+        <div className="md:flex items-center gap-10">
+          <img
+            src="/about/picCVmito.jpeg"
+            alt="Photo of me - View Minho"
+            className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
+          />
+          <div className="mt-8 md:mt-0 md:w-1/2">
+            <h2 className="text-3xl font-serif mb-4">About Us</h2>
+            <p className="text-lg mb-6">
+              View Minho began with a passion for sharing Northern Portugal with
+              travelers. With View Properties, we extend this vision — offering
+              not just a stay, but a chance to belong. Our approach is boutique:
+              intimate, personalized, and always focused on you.
+            </p>
+            <Link
+              href="/properties"
+              className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section
         className="relative py-20 px-6 bg-cover bg-center text-center text-white"
@@ -226,4 +237,3 @@ export default function Home() {
     </>
   );
 }
-
