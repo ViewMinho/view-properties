@@ -117,15 +117,15 @@ export default function Home() {
             className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
           >
             <img
-              src="/stays/CFBarros.jpg"
+              src="/stays/CFBarros.jpeg"
               alt="Plot of Land in Barros, Vila Verde"
               className="w-full h-auto object-cover"
             />
             <div className="p-4">
-              <h3 className="font-semibold">Terreno Barros</h3>
+              <h3 className="font-semibold">Plot of Land in Barros</h3>
               <p className="text-gray-600">Barros, Vila Verde</p>
               <p className="text-gray-500 text-sm mb-2">
-                Rustic plot with countryside views
+                Urban plot with countryside views
               </p>
               <p className="text-green-700 font-bold">€55,000</p>
             </div>
