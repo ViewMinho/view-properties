@@ -110,11 +110,11 @@ export default function Home() {
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
           >
-            <img
-              src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37810/34437810/312863494.jpg"
-              alt="Property in Barros, Vila Verde"
-              className="w-full h-auto object-cover"
-            />
+              <img
+    src="/stays/CFBarros.jpeg"
+    alt="Property in Vade, Vila Verde"
+    className="w-full h-auto object-cover"
+  />
             <div className="p-4">
               <h3 className="font-semibold">Terreno • Barros</h3>
               <p className="text-green-700 font-bold">€55,000</p>
