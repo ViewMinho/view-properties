@@ -109,7 +109,7 @@ export default function Home() {
             </div>
           </a>
 
-          {/* Barros Property (using Idealista image for now) */}
+          {/* Barros Property */}
           <a
             href="https://www.idealista.pt/imovel/34437810/"
             target="_blank"
@@ -117,8 +117,8 @@ export default function Home() {
             className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition text-left bg-white"
           >
             <img
-              src="https://img3.idealista.pt/blur/WEB_DETAIL-c-90/images/listing/93/34/37810/34437810/312863494.jpg"
-              alt="Property in Barros, Vila Verde"
+              src="/stays/CFBarros.jpg"
+              alt="Plot of Land in Barros, Vila Verde"
               className="w-full h-auto object-cover"
             />
             <div className="p-4">
