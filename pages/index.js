@@ -185,14 +185,20 @@ export default function Home() {
             alt="Photo of me - View Minho"
             className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
           />
-          <div className="mt-8 md:mt-0 md:w-1/2">
-            <h2 className="text-3xl font-serif mb-4">About Us</h2>
-            <p className="text-lg mb-6">
-              View Minho began with a passion for sharing Northern Portugal with
-              travelers. With View Properties, we extend this vision — offering
-              not just a stay, but a chance to belong. Our approach is boutique:
-              intimate, personalized, and always focused on you.
-            </p>
+           <div className="mt-8 md:mt-0 md:w-1/2">
+      <h2 className="text-3xl font-serif mb-4">About Us</h2>
+      <p className="text-lg mb-6">
+        View Minho was born from a deep love for Northern Portugal — its
+        landscapes, traditions, and the quiet beauty of its villages. What began
+        as a desire to share this hidden gem with travelers soon grew into a
+        philosophy: to offer more than a stay, to create a sense of belonging.
+      </p>
+      <p className="text-lg mb-6">
+        With View Properties, we carry this same vision into real estate. Each
+        home we present is chosen with care, reflecting authenticity, character,
+        and a lifestyle rooted in nature and culture. Our approach is intimate
+        and boutique — thoughtful, personal, and always centered on you.
+      </p>
             <Link
               href="/properties"
               className="px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition inline-block"
