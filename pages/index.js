@@ -131,25 +131,31 @@ export default function Home() {
             </div>
           </a>
  <img
-              src="/stays/BGpic.png"
-              alt="More Properties Coming Soon..."
-              className="w-full h-auto object-cover"
-          {/* Placeholder for future property */}
-          <div className="bg-white rounded-2xl shadow-lg p-4 flex items-center justify-center">
-            <span className="text-gray-500">More properties coming soon…</span>
-          </div>
-        </div>
+               {/* Placeholder / More to come (with optional image) */}
+    <div className="block rounded-2xl overflow-hidden shadow bg-white flex flex-col">
+      {/* If you want a picture here, keep this <img>. Otherwise you can delete it. */}
+      <img
+        src="/stays/BGpic.png"
+        alt="More Properties Coming Soon..."
+        className="w-full h-auto object-cover"
+      />
+      <div className="p-4 flex-1 flex items-center justify-center">
+        <span className="text-gray-500">More properties coming soon…</span>
+      </div>
+    </div>
 
-        {/* Button below grid */}
-        <div className="mt-8">
-          <Link
-            href="/properties"
-            className="inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
-          >
-            View All Properties
-          </Link>
-        </div>
-      </section>
+  </div>
+
+  {/* Button below grid */}
+  <div className="mt-8">
+    <Link
+      href="/properties"
+      className="inline-block px-6 py-3 bg-green-700 text-white rounded-2xl shadow hover:bg-green-600 transition"
+    >
+      View All Properties
+    </Link>
+  </div>
+</section>
 
       {/* Experiences Section */}
       <section className="py-16 px-6 max-w-6xl mx-auto text-center">
