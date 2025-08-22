@@ -134,11 +134,12 @@ export default function Home() {
                {/* Placeholder / More to come (with optional image) */}
     <div className="block rounded-2xl overflow-hidden shadow bg-white flex flex-col">
       {/* If you want a picture here, keep this <img>. Otherwise you can delete it. */}
-      <img
-        src="/stays/BGpic.png"
-        alt="More Properties Coming Soon..."
-        className="w-full h-auto object-cover"
-      />
+     <img
+  src="/stays/BGpic.png"
+  alt="More Properties Coming Soon..."
+  className="w-full h-auto object-cover"
+/>
+{/* comment after the tag */}
       <div className="p-4 flex-1 flex items-center justify-center">
         <span className="text-gray-500">More properties coming soon…</span>
       </div>
