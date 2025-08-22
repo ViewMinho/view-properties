@@ -171,9 +171,10 @@ export default function Home() {
       <section className="py-16 px-6 bg-gray-100 max-w-6xl mx-auto">
         <div className="md:flex items-center gap-10">
           <img
-            src="https://images.unsplash.com/photo-1600585154154-258d9ef0a1a8?auto=format&fit=crop&w=1200&q=80"
-            alt="Traditional Quinta in Minho with pool"
-            className="rounded-2xl shadow-lg w-full md:w-1/2"
+  src="/stays/picCVmito.jpeg"
+  alt="Photo of me - View Minho"
+  className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
+/>
           />
           <div className="mt-8 md:mt-0 md:w-1/2">
             <h2 className="text-3xl font-serif mb-4">About Us</h2>
